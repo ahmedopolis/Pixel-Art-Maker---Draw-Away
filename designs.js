@@ -4,12 +4,45 @@
 // When size is submitted by the user, call makeGrid()
 
 function makeGrid() {
-
 // Your code goes here!
+    var submitForm = document.getElementById('sizePicker');
+    submitForm.addEventListener('submit', buildGrid);
 
+    function buildGrid(event) {
+        event.preventDefault();
+    
+        var tableElement = document.getElementById('pixelCanvas');
+        while (tableElement.hasChildNodes()) {
+            tableElement.removeChild(tableElement.lastChild);
+        }
+    
+        var tableHeightValue = document.getElementById('inputHeight').value;
+        var tableWidthValue = document.getElementById('inputWidth').value;
+        const fullGridDiv = document.createElement('div');
+    
+        for (var i = 1; i <= tableHeightValue; i++) {
+            const tableRowInstance = document.createElement('tr');
+            for (var j = 1; j <= tableWidthValue; j++) {
+                const tableCellInstance = document.createElement('td');
+                tableCellInstance.style.background = "white";
+                tableRowInstance.appendChild(tableCellInstance);
+            }
+            fullGridDiv.appendChild(tableRowInstance);
+        }
+    
+        tableElement.appendChild(fullGridDiv);
+    }
+
+    var colorInputValue = document.getElementById('colorPicker').value;    
 }
 
-// Additionnal Code
+
+
+
+/**
+ * Additional Code Starting Here.
+ */
+
 function bodyEdits() {
     document.body.style.backgroundImage = "url('pattern-background.jpg')";
 }
@@ -46,3 +79,4 @@ function additionnalEdits() {
 }
 
 additionnalEdits();
+makeGrid();
