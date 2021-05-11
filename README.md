@@ -34,15 +34,15 @@ npm install supertest babel-cli superagent --save-dev
 
 ### Sample #1
 
-![Watermelon Slice](Watermelon-Slice-Pixelated-Image.PNG)
+![Watermelon Slice](images/Watermelon-Slice-Pixelated-Image.PNG)
 
 ### Sample #2
 
-![Multicolor Star](Multicolor-Star-Pixelated-Image.PNG)
+![Multicolor Star](images/Multicolor-Star-Pixelated-Image.PNG)
 
 ### Sample #3
 
-![Mario Red Mushroom](Mario-Red-Mushroom-Pixelated-Image.PNG)
+![Mario Red Mushroom](images/Mario-Red-Mushroom-Pixelated-Image.PNG)
 
 ## Instructions
 
