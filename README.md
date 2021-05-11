@@ -3,6 +3,33 @@
 This repository houses the necessary assets for the "Draw-Away" page, which contains a pixel art maker.
 It enables users to make visual drawings by sizing a grid and choosing a given color for any grid's units.
 
+### List of all needed npm commands
+
+All commands needed are found below:
+
+```bash
+npm init
+npm i node express
+npm install dotenv
+npm i cors
+npm i http
+npm install --save-dev jest
+npm install node-fetch
+npm i webpack webpack-cli
+npm install webpack-dev-server --save-dev
+npm i -D @babel/core @babel/preset-env babel-loader
+npm i -D html-webpack-plugin
+npm i -D clean-webpack-plugin
+npm i -D style-loader node-sass css-loader sass-loader
+npm install file-loader --save-dev
+npm i mini-css-extract-plugin
+npm install terser-webpack-plugin --save-dev
+npm install --save-dev optimize-css-assets-webpack-plugin
+npm install workbox-webpack-plugin --save-dev
+npm install --save @babel/polyfill
+npm install supertest babel-cli superagent --save-dev
+```
+
 ## Visual Samples
 
 ### Sample #1
