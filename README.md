@@ -60,7 +60,7 @@ new grid will have the default color white and not inherit your previously desig
 
 ## Tools
 
-This webpage uses the following technologies: HTML, CSS, and JavaScript.
+This webpage uses the following technologies: HTML, SASS, Webpack, JavaScript, Node.js and Express.js.
 
 ## License
 
