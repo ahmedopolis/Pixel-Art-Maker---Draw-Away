@@ -1,0 +1,6 @@
+// Enable use of ES6.
+{
+    "presets": [
+        "@babel/preset-env"
+    ]
+}
