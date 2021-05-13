@@ -9,7 +9,7 @@ const http = require("http");
 
 // Setup server
 let port = process.env.PORT;
-const hostName = process.env.HOST;
+const hostName = process.env.HOSTNAME;
 if (port == null || port == "") {
   port = 8000;
 }
