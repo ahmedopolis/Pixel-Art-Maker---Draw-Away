@@ -1,10 +1,8 @@
 const app = require("./app");
 
 // Load-in env variables
-if (process.env.NODE_ENV !== "production") {
-  const dotenv = require("dotenv");
-  dotenv.config();
-}
+const dotenv = require("dotenv");
+dotenv.config();
 
 // Module to enable request via hyper text transfer protocol
 const http = require("http");
