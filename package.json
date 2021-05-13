@@ -7,7 +7,7 @@
     "test": "jest --runInBand --coverage",
     "start": "node src/server/server.js",
     "build-prod": "webpack --config config/webpack.prod.js",
-    "build-dev": "webpack serve --config config/webpack.dev.js --open --hot --port 7080"
+    "build-dev": "webpack serve --config config/webpack.dev.js --open --hot"
   },
   "repository": {
     "type": "git",
