@@ -21,5 +21,10 @@ app.use(cors());
 // Connect the bundled folder
 app.use(express.static("dist"));
 
+// Default GET
+app.get("/", (req, res) => {
+  res.send("It worked");
+});
+
 // Export 'app.js'
 module.exports = app;
