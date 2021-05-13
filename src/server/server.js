@@ -1,11 +1,23 @@
 const app = require("./app");
 
+// Load-in env variables
+if (process.env.NODE_ENV !== "production") {
+  const dotenv = require("dotenv");
+  dotenv.config();
+}
+
 // Module to enable request via hyper text transfer protocol
 const http = require("http");
 
 // Setup server
-const port = 7000;
-const hostName = "localhost";
+let port = process.env.PORT;
+const hostName = process.env.HOST;
+if (port == null || port == "") {
+  port = 8000;
+}
+if (hostName == null || hostName == "") {
+  hostName = "localhost";
+}
 const localServer = http.createServer(app);
 
 // Spin up the server
