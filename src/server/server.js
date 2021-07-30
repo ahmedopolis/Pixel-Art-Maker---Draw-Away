@@ -8,7 +8,7 @@ dotenv.config();
 const http = require("http");
 
 // Setup server
-let port = process.env.PORT || 8000;
+let port = process.env.PORT || 9000;
 const hostName = process.env.HOSTNAME;
 if (port == null || port == "") {
   port = 9000;
